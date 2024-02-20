@@ -1,0 +1,87 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: content-box;
+}
+
+body {
+background: url(https://i.postimg.cc/htSP6Myt/space.jpg);
+overflow: hidden;
+}
+
+@keyframes rotate {
+to {
+transform: rotateZ(1turn);
+}
+}
+
+
+.earth-way {
+width: 500px;
+height: 500px;
+border-radius: 50%;
+/* border: 1px solid rgba(255, 255, 255, 0.5);*/ 
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -250px 0 0 -250px;
+animation: rotate 20s infinite linear;
+}
+
+.sun {
+width: 120px;
+height: 120px;
+position: absolute;
+box-shadow: 0 0 120px 10px rgb(251, 218, 100);
+top: 50%;
+left: 50%;
+margin-left: -75px;
+margin-top: -75px;
+border-radius: 50%;
+background: url(../image/sun.png) no-repeat;
+background-size: 100%;
+animation: rotate 50s infinite linear;
+}
+
+.moon-way {
+width: 250px;
+height: 250px;
+/*border: 1px solid rgba(24, 16, 16, 0.5);*/
+position: absolute;
+border-radius: 50%;
+bottom: -125px;
+left: 50%;
+margin-left: -125px;
+animation: rotate 9s infinite linear;
+}
+
+
+.earth {
+width: 80px;
+height: 80px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -40px;
+margin-top: -40px;
+border-radius: 50%;
+background: url(https://i.postimg.cc/KjB8SWhR/earth.png) no-repeat;
+background-size: 100%;
+animation: rotate 9s infinite linear;
+}
+
+.moon {
+width: 40px;
+height: 40px;
+position: absolute;
+left: 50%;
+margin-left: -20px;
+bottom: -20px;
+border-radius: 50%;
+background: url(https://i.postimg.cc/V5PPqsTN/moon.png) no-repeat;
+background-size: 100%;
+animation: rotate 3s infinite linear;
+}
+
+
+
